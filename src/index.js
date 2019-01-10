@@ -84,7 +84,7 @@ export default class IdenticonComponent extends Component {
             (i - 5) * cell + margin,
             cell,
             cell,
-            i
+            i + "b"
           )
         );
       } else if (i < 15) {
@@ -103,7 +103,7 @@ export default class IdenticonComponent extends Component {
             (i - 10) * cell + margin,
             cell,
             cell,
-            i
+            i + "b"
           )
         );
       }
@@ -119,12 +119,12 @@ export default class IdenticonComponent extends Component {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`0 0 ${size} ${size}`}
-        style={{ backgroundColor: background }}
+        style={{ backgroundColor: `rgba(${background.join()})` }}
       >
         <g
           style={{
-            fill: foreground,
-            stroke: foreground,
+            fill: `rgb(${foreground})`,
+            stroke: `rgb(${foreground})`,
             strokeWidth: size * 0.005
           }}
         >
