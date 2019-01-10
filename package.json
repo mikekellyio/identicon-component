@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "build": "webpack",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "buildStorybook": "build-storybook -c .storybook -o docs"
   },
   "author": "Mike Kelly",
   "license": "ISC",
@@ -16,7 +17,8 @@
     "react-dom": "^16.6.0"
   },
   "devDependencies": {
-    "@storybook/react": "^4.1.4",
+    "@storybook/addon-knobs": "^4.1.4",
+    "@storybook/react": "^4.1.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
